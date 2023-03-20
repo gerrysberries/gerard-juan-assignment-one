@@ -391,7 +391,8 @@ header .feature {
 }
 
 .about p {
-    padding: 0 330px;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .btn {
