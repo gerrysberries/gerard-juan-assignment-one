@@ -258,7 +258,7 @@ html {
 /* temp border */
 
 html * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #232323;
     font-size: 16px;
 }
@@ -291,6 +291,13 @@ ul {
 
 ul a {
     text-decoration: none;
+}
+
+ul a:hover,
+ul a:focus {
+    text-decoration: underline;
+    outline: none;
+    font-size: 1.1rem;
 }
 
 
@@ -334,10 +341,6 @@ nav.top-bar {
     padding-top: 30px;
 }
 
-/* nav.top-bar>* {
-    width: 40%;
-} */
-
 nav.top-bar ul {
     display: flex;
     justify-content: space-between;
@@ -348,11 +351,8 @@ nav.top-bar li {
     font-family: 'Cabin', sans-serif;
     font-size: 2rem;
     font-weight: 700;
+    text-transform: uppercase;
 }
-
-/* nav li:nth-child(4) {
-    margin-right: 0;
-} */
 
 /* feature */
 
@@ -381,7 +381,7 @@ header .feature {
 /* about styles */
 
 .about {
-    padding: 3rem 10rem;
+    padding: 3rem 0;
 }
 
 .about h2 {
@@ -396,8 +396,7 @@ header .feature {
     width: 50%;
 }
 
-.btn,
-button {
+.btn {
     display: inline-block;
     background-color: #FDC800;
     font-size: 1.125rem;
@@ -408,6 +407,13 @@ button {
     padding: 5px 25px;
     margin-top: 10px;
 }
+
+.btn:hover,
+.btn:focus {
+    color: white;
+    text-decoration: remove;
+}
+
 
 /* quick links section */
 
@@ -476,8 +482,8 @@ button {
 
 .blog .wrapper>* {
     width: 50%;
-    /* flex-shrink: 1;
-    height: auto; */
+    padding: 0 20px 20px 20px;
+
 }
 
 .blog .wrapper :nth-child(3) {
@@ -487,21 +493,6 @@ button {
 .blog .wrapper :nth-child(4) {
     order: 1;
 }
-
-/* .blog .wrapper div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
-/* .blog .wrapper div {
-    margin: auto 0;
-    padding: 80px 100px;
-}
-
-.blog-image-container {
-    width: 50vw;
-} */
 
 /* Cook styles */
 
@@ -586,7 +577,7 @@ button {
     color: #000;
 }
 
-#email {
+.email {
     color: #000;
     padding-left: 30px;
     flex-grow: 1;
@@ -603,3 +594,172 @@ footer p {
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 940px) {
+    .links-list {
+        flex-direction: column;
+    }
+
+    .quick-links img {
+        max-width: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 3rem 0;
+    }
+
+    .about p {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    .links-list {
+        flex-direction: column;
+    }
+
+    .quick-links a {
+        margin: 40px 0;
+    }
+
+    .gallery .wrapper {
+        width: 100%;
+    }
+
+    .blog .wrapper {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .blog .wrapper>* {
+        width: 100%;
+        padding: 0;
+    }
+
+    .blog p {
+        padding: 0 50px;
+    }
+
+    .gallery {
+        padding: 0;
+    }
+
+    .gal-img-3 {
+        display: none;
+    }
+
+    .gallery ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gallery li {
+        flex-basis: 50%;
+    }
+
+
+    .blog .wrapper :nth-child(3) {
+        order: 1;
+    }
+
+    .blog .wrapper :nth-child(4) {
+        order: 2;
+    }
+
+    .cook .wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .cook-image-container {
+        width: 50%;
+        margin: 40px 0;
+    }
+
+    .cook-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .cook h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .contact-row>* {
+        width: 70%;
+        text-align: center;
+    }
+
+    .contact-container ul>li:first-of-type:after {
+        content: ","
+    }
+
+    .form-container {
+        width: 100%;
+        order: -1;
+    }
+
+    .posts-container {
+        display: none;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe-form>* {
+        width: 100%;
+    }
+
+    .email {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    .pages-container {
+        line-height: 1.5;
+    }
+
+    .pages-container li:not(:first-child) {
+        border-left: 1px solid #fff;
+    }
+}
+
+
+
+/* @media (max-width: 480px) {
+    .links-list {
+        flex-direction: column;
+    }
+
+    .quick-links img {
+        max-width: 55%;
+    }
+} */

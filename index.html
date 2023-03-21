@@ -40,9 +40,11 @@
     <section id="about" class="section about">
         <div class="wrapper">
             <h2>About Tasty</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illo esse dignissimos atque veritatis
-                a assumenda cupiditate illum, natus quos nisi eveniet laboriosam, enim fuga ratione sapiente ipsa?
-                Voluptatem, itaque!
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores veniam nesciunt eius dignissimos
+                sit, nulla, est aut consequatur quis quaerat quia impedit soluta tempore temporibus laudantium ad ab
+                quasi quod.
+                Ratione aliquid ipsum accusantium hic modi molestiae dolor veniam. Ut, molestiae eligendi. Harum eius
+                magnam voluptatum ipsum, doloribus accusamus atque adipisci temporibus.
             </p>
             <a class="btn about-btn" href="#">Find out more</a>
         </div>
@@ -50,7 +52,7 @@
 
     <section class="section quick-links">
         <div class="wrapper">
-            <ul>
+            <ul class="links-list">
                 <li>
                     <a href="#">
                         <img src="./tasty-assets/fork-knife.svg" alt="">
@@ -77,10 +79,11 @@
     <section class="section gallery">
         <div class="wrapper">
             <div class="gallery-image-container">
-                <ul>
+                <ul class="gallery-list">
                     <li><img src="./tasty-assets/asset-2.jpg" alt="lemons and blueberries"></li>
                     <li><img src="./tasty-assets/asset-3.jpg" alt="bowl of salad on a table"></li>
-                    <li><img src="./tasty-assets/asset-4.jpg" alt="a pot and bowl of soup on a table"></li>
+                    <li class="gal-img-3"><img src="./tasty-assets/asset-4.jpg" alt="a pot and bowl of soup on a table">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -147,7 +150,7 @@
                 <div class="contact-container">
                     <span>Contact</span>
                     <ul>
-                        <li>info@email.com,</li>
+                        <li>info@email.com</li>
                         <li>123 - 456 - 7890</li>
                         <li>123 some road.</li>
                         <li>Toronto. ON</li>
@@ -157,19 +160,19 @@
                 <div class="pages-container">
                     <span>Pages</span>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="posts-container">
                     <span>Recent posts</span>
                     <ul>
-                        <li>Lemon Pound Cake</li>
-                        <li>Spaghetti Squash</li>
-                        <li>Sugar Free Lemonade</li>
+                        <li><a href="#">Lemon Pound Cake</a></li>
+                        <li><a href="#">Spaghetti Squash</a></li>
+                        <li><a href="#">Sugar Free Lemonade</a></li>
                     </ul>
                 </div>
 
@@ -178,8 +181,8 @@
                     <p>Subscribe to our newsletter to stay updated.</p>
                     <label class="sr-only" for="email">Email here:</label>
                     <form action="submit" class="subscribe-form">
-                        <input type="email" id="email" placeholder="email address" name="email" required>
-                        <a class="btn subscribe-btn" href="#">SUBSCRIBE</a>
+                        <input class="email" type="email" id="email" placeholder="email address" name="email" required>
+                        <a class="btn subscribe-btn" href="#">Subscribe</a>
 
                         <!-- <input type="button" class="btn subscribe-btn" name="subscribe" id="subscribe"
                             value="Subscribe"> -->
