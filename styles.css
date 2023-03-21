@@ -334,24 +334,25 @@ nav.top-bar {
     padding-top: 30px;
 }
 
-nav.topbar>* {
+/* nav.top-bar>* {
     width: 40%;
-}
+} */
 
-nav ul {
+nav.top-bar ul {
     display: flex;
+    justify-content: space-between;
+    width: 30%;
 }
 
-nav li {
-    margin: 0 20px;
+nav.top-bar li {
     font-family: 'Cabin', sans-serif;
-    font-size: 1.125rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
-nav li:nth-child(4) {
+/* nav li:nth-child(4) {
     margin-right: 0;
-}
+} */
 
 /* feature */
 
@@ -395,7 +396,8 @@ header .feature {
     width: 50%;
 }
 
-.btn {
+.btn,
+button {
     display: inline-block;
     background-color: #FDC800;
     font-size: 1.125rem;
@@ -500,7 +502,7 @@ header .feature {
 /* Cook styles */
 
 .cook {
-    background: #F8F8F8;
+    background: #FFF;
 }
 
 .cook .wrapper {
@@ -529,10 +531,41 @@ header .feature {
 
 .contact {
     background: #232323;
+    text-align: left;
 }
 
-.contact li,
-.contact span,
-.contact p {
+.contact span {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.contact * {
     color: white;
+}
+
+.contact button {
+    color: #000;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-row>* {
+    flex-basis: 15%;
+}
+
+.form-container {
+    flex-grow: 2;
+}
+
+button,
+form {
+    display: inline-block;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
 }
