@@ -475,6 +475,10 @@ header .feature {
     font-size: 2rem;
 }
 
+/* .blog p {
+    padding: 0 100px;
+} */
+
 .blog .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -483,7 +487,6 @@ header .feature {
 .blog .wrapper>* {
     width: 50%;
     padding: 0 20px 20px 20px;
-
 }
 
 .blog .wrapper :nth-child(3) {
@@ -606,6 +609,10 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+    .top-bar {
+        display: none;
+    }
 
     .about {
         padding: 3rem 0;
